@@ -1,7 +1,7 @@
 import { Repository } from "src/common/repository.interface";
-import { UserDto } from "../dto/user.dto";
+import { UserRepositoryDto } from "../dto/user.dto";
 
 export interface IUserRepository extends Repository {
-    findById(id:string): Promise<UserDto>
-    findByEmail(email:string): Promise<UserDto>
+    findById(id:string): Promise<UserRepositoryDto>
+    findByEmail(email:string): Promise<UserRepositoryDto>
 }

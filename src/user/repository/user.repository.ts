@@ -1,13 +1,13 @@
 import { Module } from '@nestjs/common';
-import { UserDto } from '../dto/user.dto';
+import { UserRepositoryDto } from '../dto/user.dto';
 import { IUserRepository } from './user.repository.interface';
 
 @Module({})
 export class UserRepository implements IUserRepository{
-    findById(id: string): Promise<UserDto> {
+    findById(id: string): Promise<UserRepositoryDto> {
         throw new Error('Method not implemented.');
     }
-    findByEmail(email: string): Promise<UserDto> {
+    findByEmail(email: string): Promise<UserRepositoryDto> {
         throw new Error('Method not implemented.');
     }
     save(model: string): Promise<void> {
